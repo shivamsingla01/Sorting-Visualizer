@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./css/sort.css">
+</head>
+
+<body>
+    <div class="start">
+
+        <div class="inputs">
+            <div class="input_a">
+                <label for="sz">Size of Array : </label>
+                <input type="range" id="sz" name = "sz" min=15 max=155 step=1 value=85></div>
+               
+        
+            <div class="input_b"><label for="speed">Speed of Algorithm : </label><input type="range" id="speed" name="speed" min=1 max=5  step=1 value=4>
+                </div>
+                <button class="generate">Generate New Array!</button>
+                
+        </div>
+        
+        <div class="temp"><h1 class="heading">SORTING VISUALIZER</h1>
+        
+            <div class="algo">
+                <button class="bubble">BUBBLE</button>
+                <button class="selection">SELECTION</button>
+                <button class="insertion">INSERTION</button>
+                <button class="merge">MERGE</button>
+                <button class="quick">QUICK</button>
+                <button class="heap">HEAP</button></div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="pic1">
+                <img src="./images/inc.jpg" alt="Increasing" class="inc" />
+                <p class="first">Smallest Height</p>
+            </div>
+            
+            <div id="bar_container"></div>
+            <div class="pic2">
+                <img src="./images/dec.jpg" alt="Decreasing" class="dec"/>
+                <p class="second">Largest Height</p>
+            </div>
+            <br><br>
+            
+            
+        </div>
+        <div class="line"></div>
+
+<script src="./scripts/sorting.js"></script> 
+<script src="./scripts/bubble.js"></script>  
+<script src="./scripts/selection.js"></script>    
+<script src="./scripts/insertion.js"></script>
+<script src="./scripts/merge.js"></script>
+<script src="./scripts/quick.js"></script> 
+<script src="./scripts/heap.js"></script>
+</body>
+</html>
